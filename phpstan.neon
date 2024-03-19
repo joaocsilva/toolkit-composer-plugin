@@ -1,0 +1,11 @@
+parameters:
+    level: 9
+    paths:
+        - src
+    excludePaths:
+        - vendor
+    ignoreErrors:
+        -
+            message: "#^Unsafe usage of new static\\(\\)\\.$#"
+            count: 1
+            path: src/Plugin.php
